@@ -1,0 +1,145 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    height: 100vh;
+    background-color: grey;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.heading{
+    color:rgb(249, 238, 15);
+    font-size: 39px;
+    font-weight: 900;
+    margin: 12px;
+}
+.game-body{
+    height: 650px;
+    width: 520px;
+    padding: 20px;
+    background-color: rgba(2, 6, 9, 0.484);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.form{
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    font-size: 50px;
+    padding: 20px;
+}
+input{
+    font-size: 30px;
+    padding: 5px;
+    margin: 10px;
+}
+button{
+    font-size: 25px;
+    padding: 3px;
+    margin: 10px;
+    cursor: pointer;
+    background-color: rgba(59, 3, 243, 0.895);
+    color: wheat;
+}
+button:hover{
+    background-color: blue;
+    font-size: 26px;
+    padding: 4px;
+
+}
+.top-text{
+    font-size: 20px;
+    text-align: center;
+}
+.last-text{
+    font-size: 20px;
+}
+.prevGuess , .remGuess{
+    background-color: rgb(28, 27, 27);
+    margin: 2px;
+    padding: 3px;
+}
+.prev{
+    margin: 10px;
+}
+.rem{
+    margin: 10px;
+
+}
+.lowOrHigh{
+    margin-bottom: 45px;
+    margin-top: -40px;
+}
+#newGame{
+    background-color:  rgba(59, 3, 243, 0.895);
+    width: 240px;
+    padding: 5px;
+    margin: 15px;
+    margin-top: 30px;
+    cursor: pointer;
+}
+#newGame:hover{
+    background-color:  blue;
+    padding: 6px;
+}
+
+@media (max-width:500px) {
+    .heading{
+        font-size: 22px;
+        margin: 12px;
+    }
+    .game-body{
+        height: 100%;
+        width: 100%;
+        padding: 10px;
+    }
+    .form{
+        height: 200px;
+        width: 100%;
+        font-size: 28px;
+        padding: 10px;
+    }
+    input{
+        font-size: 19px;
+        padding: 5px;
+        margin: 5px;
+        width: 60%;
+    }
+    #submit{
+        font-size: 20px;
+        padding: 3px;
+        margin: 10px;
+    }
+    .top-text{
+        font-size: 15px;
+    }
+    .last-text{
+        font-size: 15px;
+    }
+    .prev{
+        margin: 8px;
+    }
+    .rem{
+        margin: 5px;
+    
+    }
+    .lowOrHigh{
+        margin-bottom: 25px;
+        margin-top: -20px;
+    }
+    #newGame{
+        width: 50%;
+        font-size: 20px;
+        padding: 5px;
+        margin: 15px;
+        margin-top: 20px;
+    }
+    #newGame:hover{
+        padding: 6px;
+    } 
+}
